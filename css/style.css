@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.hero {
+  background-color: #484cec;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%235156f0' fill-opacity='1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dividor {
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dividor h1 {
+  font-size: 65px;
+}
+
+.dividor p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-out 0s, color, opacity, border;
+  line-height: 22px;
+  background: #272934;
+  border-radius: 8px;
+  color: #fff;
+  height: 46px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 16px;
+}
+
+.button:hover {
+  transition: opacity 0.15s ease-out 0s;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+@keyframes fload-toping {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 10px 15px rgba(22, 22, 22, 0.5);
+  }
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(22, 22, 22, 0.5);
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 10px 15px rgba(22, 22, 22, 0.5);
+  }
+}
+
+.fload {
+  border-radius: 160px;
+  animation: fload-toping 4s ease-in-out infinite;
+}
